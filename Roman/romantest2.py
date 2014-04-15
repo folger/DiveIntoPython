@@ -115,6 +115,7 @@ class FromRomanBadInput(unittest.TestCase):
         '''form_roman should fail with blank string'''
         self.assertRaises(roman2.InvalidRomanNumeralError, roman2.from_roman, '')
 
+
 class RoundTripCheck(unittest.TestCase):
     def test_roundtrip(self):
         '''from_roman(to_roman(n)) == n for all n'''
